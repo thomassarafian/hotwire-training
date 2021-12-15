@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<br>
+<h1 class="text-xl font-medium text-purple-600">Librairy Books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Description</th>
+      <th>Status date</th>
+      <th>Internal info</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @librairy_books.each do |librairy_book| %>
+      <tr>
+        <td><%= librairy_book.title %></td>
+        <td><%= librairy_book.status %></td>
+        <td><%= librairy_book.description %></td>
+        <td><%= librairy_book.status_date %></td>
+        <td><%= librairy_book.internal_info %></td>
+        <td><%= link_to 'Show', librairy_book %></td>
+        <td><%= link_to 'Edit', edit_librairy_book_path(librairy_book) %></td>
+        <td><%= link_to 'Destroy', librairy_book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Librairy Book', new_librairy_book_path %>
