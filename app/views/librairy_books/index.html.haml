@@ -1,0 +1,11 @@
+%p#notice= notice
+%br/
+%h1.text-xl.font-medium.text-purple-600 Librairy Books
+
+=turbo_stream_from "librairy_books"
+
+=turbo_frame_tag "librairy_books" do
+  =render @librairy_books
+
+%br/
+= link_to 'New Librairy Book', new_librairy_book_path

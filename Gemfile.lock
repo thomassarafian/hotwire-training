@@ -83,6 +83,9 @@ GEM
     ffi (1.15.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
     hotwire-rails (0.1.3)
       rails (>= 6.0.0)
       stimulus-rails
@@ -179,6 +182,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.0.0)
       railties (>= 6.0.0)
+    temple (0.8.2)
     thor (1.1.0)
     tilt (2.0.10)
     turbo-rails (1.0.0)
@@ -217,6 +221,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  haml
   hotwire-rails (~> 0.1.3)
   jbuilder (~> 2.7)
   listen (~> 3.3)
